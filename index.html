@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-HW-11</title>
+  </head>
+  <body>
+    <h4>Buttons for BankAccount Assignment</h4>
+    <input type="text" id="amount" width="400px" , height="200px" /><br />
+    <button id="bankDeposit" onclick="bankAccount.deposit(readInputValue())">
+      поповнити рахунок
+    </button>
+    <button id="bankWithdraw" onclick="bankAccount.withdraw(readInputValue())">
+      отримати ‘готівку’</button
+    ><br />
+    <h4>Buttons for Weather Assignment</h4>
+    <input type="text" id="temp" width="400px" , height="200px" /><br />
+    <button onclick="weather.tempCheck()">Submit</button>
+    <h4>Buttons for User Assignment</h4>
+    <input type="text" id="email" width="400px", height="200px" placeholder="Enter Email"/><br />
+    <input type="text" id="pass" width="400px", height="200px" placeholder="Enter Password"/><br />
+    <button onclick="user.login()">Submit</button>
+
+    <script src="index.js"></script>
+  </body>
+</html>
