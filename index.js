@@ -49,22 +49,29 @@ const user = {
     } else {
       console.log("Correct Login Info");
     }
-  }
+  },
 };
 
 const movie = {
-    title: " ", 
-    director: " ", 
-    year: " ", 
-    rating: null, 
+  title: "The Gentlemen",
+  director: "Guy Ritchie",
+  year: 2019,
+  rating: 8.3,
 
-    ratingCheck() {
-        if (this.rating > 8) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    }, 
-    
+  ratingCheck() {
+    if (this.rating > 8) {
+      return true;
+    } else {
+      return false;
+    }
+  },
+  colourChange(rate) {
+    if (rate === true) {
+      let message = `<span style="color: green;">${this.title}</span> ${this.director} ${this.year} ${this.rating}`;
+      document.getElementById("movieInfo").innerHTML = message;
+    } else {
+      let message = `${this.title} ${this.director} ${this.year} ${this.rating}`;
+      document.getElementById("movieInfo").innerHTML = message;
+    }
+  }
 };

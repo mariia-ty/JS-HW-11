@@ -18,10 +18,28 @@
     <input type="text" id="temp" width="400px" , height="200px" /><br />
     <button onclick="weather.tempCheck()">Submit</button>
     <h4>Buttons for User Assignment</h4>
-    <input type="text" id="email" width="400px", height="200px" placeholder="Enter Email"/><br />
-    <input type="text" id="pass" width="400px", height="200px" placeholder="Enter Password"/><br />
+    <input
+      type="text"
+      id="email"
+      width="400px"
+      ,
+      height="200px"
+      placeholder="Enter Email"
+    /><br />
+    <input
+      type="text"
+      id="pass"
+      width="400px"
+      ,
+      height="200px"
+      placeholder="Enter Password"
+    /><br />
     <button onclick="user.login()">Submit</button>
-
+    <h4>Buttons for Movie Info</h4>
+    <button onclick="movie.colourChange(movie.ratingCheck())">
+      Click for Movie Info
+    </button>
+    <p id="movieInfo"></p>
     <script src="index.js"></script>
   </body>
 </html>
